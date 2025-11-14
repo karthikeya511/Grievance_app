@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #121826, #1b2233, #0f172a);
+  color: #f8f9fa;
+  overflow-x: hidden;
+  font-size: 1.05rem; /* increased base font size */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 600;
+}
+.nav-link {
+  color: #e0e6ef !important;
+}
+.nav-link:hover {
+  color: #6cb8ff !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #5d5fef, #3b82f6);
+  border: none;
+  transition: 0.3s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+}
+.btn-danger {
+  background: linear-gradient(90deg, #ef4444, #b91c1c);
+  border: none;
+}
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4);
+}
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
+}
+.card-title {
+  font-weight: 600;
+  color: #60a5fa;
+}
+.card small {
+  color: #9ca3af;
+}
+/* Card text color adjustment for dark background */
+.card-text {
+  color: #f3f8ff !important; /* almost white with a cool tone */
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.label1{
+  color : #60a5fa;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Input fields */
+input, textarea, select {
+  background-color: rgba(255,255,255,0.08);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+input:focus, textarea:focus, select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+  outline: none;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeInUp 0.8s ease both;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer (sticky) */
+.footer {
+  margin-top: auto;
+  background: rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255,255,255,0.15);
+  color: #a5b4fc;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+}
