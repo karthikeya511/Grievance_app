@@ -14,7 +14,7 @@ app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
 # Replace this with your actual MongoDB Atlas URI
-app.config["MONGO_URI"] = "mongodb+srv://yash:2004@cluster1.ghrvquv.mongodb.net/grievance_db"
+app.config["MONGO_URI"] = "mongodb+srv://chidellakarthikeya_db_user:Test3122@cluster0.l4ezk5e.mongodb.net/Grievance_db"
 mongo = PyMongo(app)
 
 # ==========================================
